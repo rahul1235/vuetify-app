@@ -50,7 +50,7 @@ export default {
         .then(res => {
           this.items = res.map(
             value =>
-              value.givenName + " " + value.middleName + " " + value.surname
+              value.givenName + " " + value.middleName + " " + value.surname+" Score : "+ value._score
           );
           this.loading = false;
         });
